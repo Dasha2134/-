@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МагнитиКА — Вселенная персонализированных подарков</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #096268;
+      color: white;
+      overflow-x: hidden;
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      position: relative;
+      z-index: 2;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background-color: #074e52;
+      padding: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      position: relative;
+      z-index: 2;
+    }
+    .intro, .contact, .about {
+      padding: 2rem;
+      text-align: center;
+    }
+    .product-preview {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .product {
+      background-color: #0b7c7f;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .product h3 {
+      margin: 0.5rem 0;
+    }
+    .categories {
+      padding: 1rem 2rem;
+    }
+    .categories h4 {
+      color: #f37221;
+      margin-top: 2rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      font-size: 0.9rem;
+      background-color: #074e52;
+    }
+
+    /* Декоративные элементы */
+    .star, .planet, .ring, .swirl {
+      position: fixed;
+      z-index: 1;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+    .star {
+      width: 15px;
+      height: 15px;
+      background-color: #f37221;
+      border-radius: 50%;
+    }
+    .planet {
+      width: 60px;
+      height: 60px;
+      background-color: #2f3b96;
+      border-radius: 50%;
+    }
+    .ring {
+      width: 80px;
+      height: 80px;
+      border: 2px dashed #cc2600;
+      border-radius: 50%;
+    }
+    .swirl {
+      width: 100px;
+      height: 10px;
+      background: linear-gradient(90deg, #f37221, transparent);
+    }
+  </style>
+</head>
+<body>
+  <!-- Космические элементы -->
+  <div class="star" style="top: 50px; left: 30px;"></div>
+  <div class="star" style="top: 300px; left: 80%;"></div>
+  <div class="planet" style="top: 100px; left: 85%;"></div>
+  <div class="ring" style="top: 500px; left: 100px;"></div>
+  <div class="swirl" style="top: 700px; left: 70%;"></div>
+
+  <header>
+    <h1>МагнитиКА</h1>
+    <p>Вселенная персонализированных подарков и сувениров</p>
+  </header>
+
+  <nav>
+    <a href="#magnets">Магниты</a>
+    <a href="#badges">Значки</a>
+    <a href="#keychains">Брелки</a>
+    <a href="#about">О нас</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
+  <section class="intro">
+    <h2>Популярные товары</h2>
+    <p>Скоро здесь появятся ваши любимые дизайны!</p>
+  </section>
+
+  <section id="magnets" class="categories">
+    <h2>Магниты</h2>
+    <p>Виниловые, 7×9,5 см — 80 руб</p>
+    <ul>
+      <li>Аниме</li>
+      <li>Сувенирные магниты</li>
+      <li>Комиксы</li>
+      <li>Знаменитости, фильмы</li>
+      <li>Спорт</li>
+      <li>Музыка</li>
+      <li>Мемы</li>
+      <li>Мотивация</li>
+      <li>Астрология</li>
+      <li>Советские плакаты</li>
+      <li>Праздники</li>
+    </ul>
+  </section>
+
+  <section id="badges" class="categories">
+    <h2>Значки</h2>
+    <p>Цены и размеры:</p>
+    <ul>
+      <li>25 мм — 55 руб</li>
+      <li>32 мм — 65 руб</li>
+      <li>44 мм — 75 руб</li>
+      <li>58 мм — 80 руб</li>
+    </ul>
+    <h4>Тематики:</h4>
+    <ul>
+      <li>Аниме</li>
+      <li>Сувенирные магниты</li>
+      <li>Комиксы</li>
+      <li>Знаменитости, фильмы</li>
+      <li>Спорт</li>
+      <li>Музыка</li>
+      <li>Мемы</li>
+      <li>Мотивация</li>
+      <li>Астрология</li>
+      <li>Советские плакаты</li>
+      <li>Праздники</li>
+    </ul>
+  </section>
+
+  <section id="keychains" class="categories">
+    <h2>Брелки</h2>
+    <p>Акриловые двухсторонние: 80 руб / Парные: 150 руб</p>
+    <ul>
+      <li>Парные</li>
+      <li>Аниме</li>
+      <li>Сувенирные магниты</li>
+      <li>Комиксы</li>
+      <li>Знаменитости, фильмы</li>
+      <li>Спорт</li>
+      <li>Музыка</li>
+      <li>Мемы</li>
+      <li>Мотивация</li>
+      <li>Астрология</li>
+      <li>Советские плакаты</li>
+      <li>Праздники</li>
+    </ul>
+  </section>
+
+  <section id="about" class="about">
+    <h2>О нас</h2>
+    <p>«МагнитиКА» — это маленькая галактика персонализированных магнитов, значков и брелков. Мы создаём подарки с душой, которые хочется оставить себе — и приятно дарить другим.</p>
+  </section>
+
+  <section id="contacts" class="contact">
+    <h2>Контакты</h2>
+    <p>📧 magnitmelitopol@internet.ru</p>
+    <p>📱 Telegram: <a href="https://t.me/melmagnits" style="color: #f37221">@melmagnits</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 МагнитиКА. Все права защищены.</p>
+  </footer>
+</body>
+</html>
